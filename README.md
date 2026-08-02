@@ -38,7 +38,8 @@ A `LogisticRegression` classifier (scikit-learn) trained on TF-IDF vectorized re
 | **Macro avg** | 0.81 | 0.79 | 0.80 | 6250 |
 | **Weighted avg** | 0.81 | 0.81 | 0.81 | 6250 |
 
-The model performs slightly better at identifying negative reviews (higher recall) than positive ones, suggesting some positive reviews are being misclassified as negative.
+Limitations:
+The model struggles with reviews containing positive-sounding words used in a negative context (e.g., "ruining the nice appearance"), since TF-IDF + Logistic Regression evaluates word frequency independently, without understanding negation, sentence structure, or context. For example, [this review excerpt] was predicted as 73% positive despite being a negative review, illustrating this limitation. A context-aware model (e.g., fine-tuned BERT) would likely handle such cases more accurately.
 
 ## Running the demo
 
