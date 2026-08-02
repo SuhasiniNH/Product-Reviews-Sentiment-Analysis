@@ -8,7 +8,7 @@ The dataset consists of Amazon product reviews labeled with sentiment (positive/
 
 ## Project Structure
 
-- `notebook.ipynb` — data cleaning, text preprocessing, vectorization, model training, and evaluation.
+- `Amazon-Product-Reviews-Sentiment-Analysis.ipynb` — data cleaning, text preprocessing, vectorization, model training, and evaluation.
 - `app.py` — Streamlit app for an interactive live demo.
 - `sentiment_model.pkl` — trained Logistic Regression model.
 - `tfidf_vectorizer.pkl` — fitted TF-IDF vectorizer used to transform review text.
