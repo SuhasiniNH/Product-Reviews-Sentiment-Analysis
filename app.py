@@ -23,7 +23,7 @@ if st.button("Analyze Sentiment"):
         proba = model.predict_proba(text_vec)
         print("proba:", proba)
 
-        if y_predict == "positive":
+        if y_predict == 1:
             st.write("Review is positive")
         else:
             st.write("Review is negative")  
